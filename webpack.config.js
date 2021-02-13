@@ -10,6 +10,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'app.bundle.js',
+    chunkLoading: false,
+    wasmLoading: false,
   },
   plugins: [
     new HTMLWebpackPlugin({
